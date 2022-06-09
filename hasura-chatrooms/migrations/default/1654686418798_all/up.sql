@@ -33,6 +33,21 @@ CREATE TABLE public.messages (
     sent_to integer NOT NULL,
     sent_at timestamp with time zone DEFAULT now() NOT NULL
 );
+
+
+CREATE SEQUENCE "full-schema_id_seq"
+INCREMENT 1
+MINVALUE 1
+MAXVALUE 2147483647
+CACHE 1;
+
+CREATE TABLE "public". "full-schema" (
+  "schema-id" INTEGER NOT NULL DEfAULT nextval('full-schema_id_seq'),
+  "schema-name" TEXT NOT NULL,
+  "created_at" TIMESTAMPTZ DEFAULT NOW() NOT NULL,
+  CONSTRAINT "fullschema_pkey" PRIMARY KEY ("schema-id")
+);
+
 CREATE SEQUENCE public.user_id_seq
     START WITH 1
     INCREMENT BY 1

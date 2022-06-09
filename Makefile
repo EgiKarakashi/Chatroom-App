@@ -93,3 +93,12 @@ migrate-create:
 		--database-name default \
 		--project hasura-chatrooms
 	@hasura migrate apply --project hasura-chatrooms --database-name default
+
+
+adding-new-table:
+	@hasura migrate create \
+  "full-schema" \
+  --from-server \
+  --database-name default \
+  --project hasura-chatrooms
+  
