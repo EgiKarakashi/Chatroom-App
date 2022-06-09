@@ -3,7 +3,7 @@ CREATE SEQUENCE public.chatroom_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
-    MAXVALUE 2147483647
+    MAXVALUE 2147488947
     CACHE 1;
 CREATE VIEW public.chatroom_messages AS
 SELECT
@@ -23,7 +23,7 @@ CREATE SEQUENCE public.message_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
-    MAXVALUE 2147483647
+    MAXVALUE 2147983647
     CACHE 1;
 CREATE TABLE public.messages (
     message_id integer DEFAULT nextval('public.message_id_seq'::regclass) NOT NULL,
@@ -37,7 +37,7 @@ CREATE SEQUENCE public.user_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
-    MAXVALUE 2147483647
+    MAXVALUE 2147483947
     CACHE 1;
 CREATE TABLE public.users (
     user_id integer DEFAULT nextval('public.user_id_seq'::regclass) NOT NULL,
