@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jun  9 13:34:15 2022
+# Make data base, printed on Thu Jun  9 13:56:50 2022
 
 # Variables
 
@@ -105,7 +105,7 @@ SDKMAN_PLATFORM = linuxx64
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-d91e7de8-e42c-44d9-a448-fcd50a1b79fd.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-b351ff0d-5cc3-4927-b10c-a43a2ce8da80.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -303,9 +303,9 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 
 # Directories
 
-# . (device 2346, inode 1076184402): 11 files, no impossibilities.
+# . (device 2346, inode 1076184402): 12 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -366,7 +366,8 @@ migrate-create:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-09 13:33:56.835086111
+ 
+#  Last modified 2022-06-09 13:53:37.893955336
 #  File has been updated.
 #  Successfully updated.
 
@@ -425,6 +426,17 @@ restart: stop start
 #  Modification time never checked.
 #  File has not been updated.
 
+adding-new-table:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 99):
+	@hasura migrate create \
+  "full-schema" \
+  --from-server \
+  --database-name default \
+  --project hasura-chatrooms
+
 migrate-users:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -474,19 +486,19 @@ migrate-messages:
 	@hasura migrate apply --version "1654708762287" --database-name default --project hasura-chatrooms 
 
 # files hash-table stats:
-# Load=22/1024=2%, Rehash=0, Collisions=0/38=0%
+# Load=23/1024=2%, Rehash=0, Collisions=0/39=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 34 / storage = 344 B / avg = 10 B
-# current buf: size = 8162 B / used = 344 B / count = 34 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 36 / storage = 374 B / avg = 10 B
+# current buf: size = 8162 B / used = 374 B / count = 36 / avg = 10 B
 
-# strcache performance: lookups = 62 / hit rate = 45%
+# strcache performance: lookups = 65 / hit rate = 44%
 # hash-table stats:
-# Load=34/8192=0%, Rehash=0, Collisions=1/62=2%
-# Finished Make data base on Thu Jun  9 13:34:15 2022
+# Load=36/8192=0%, Rehash=0, Collisions=1/65=2%
+# Finished Make data base on Thu Jun  9 13:56:50 2022
 
  
