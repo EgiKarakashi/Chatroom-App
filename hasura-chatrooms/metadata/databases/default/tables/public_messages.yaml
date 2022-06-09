@@ -1,0 +1,38 @@
+table:
+  schema: public
+  name: messages
+object_relationships:
+  - name: chatroom
+    using:
+      foreign_key_constraint_on: chatroom_id
+  - name: user
+    using:
+      foreign_key_constraint_on: created_by
+  - name: userBySentTo
+    using:
+      foreign_key_constraint_on: sent_to
+insert_permissions:
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - chatroom_id
+        - created_by
+        - data
+        - message_id
+        - sent_to
+      backend_only: false
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - data
+        - message_id
+        - sent_at
+      filter: {}
+delete_permissions:
+  - role: user
+    permission:
+      filter:
+        created_by:
+          _eq: 10

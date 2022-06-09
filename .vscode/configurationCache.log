@@ -1,0 +1,1 @@
+{"buildTargets":["clear","init","logs","migrate","migrate-chatrooms","migrate-create","migrate-down","migrate-messages","migrate-redo","migrate-status","migrate-up","migrate-users","reset","restart","seed","start","stop"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

@@ -1,0 +1,7 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/workspace/gitpod-workspace'
+echo "Starting the project..."
+docker-compose up -d
+docker-compose logs -f
+make: Leaving directory '/workspace/gitpod-workspace'
+ 

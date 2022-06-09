@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS "users" CASCADE;
+DROP SEQUENCE IF EXISTS "public"."user_id_seq" CASCADE;
+
+DROP TABLE IF EXISTS "chatrooms" CASCADE;
+DROP SEQUENCE IF EXISTS "public"."chatroom_id_seq" CASCADE;
+
+DROP TABLE IF EXISTS "messages" CASCADE;
+DROP SEQUENCE IF EXISTS "public"."message_id_seq" CASCADE;
