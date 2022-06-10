@@ -8,11 +8,11 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        "https://8080-egikarakash-gitpodworks-9efplgr5so9.ws-eu47.gitpod.io/api/rest/get-chatrooms-details"
+        "/api/rest/getchatrooms"
       )
       .then((res) => {
-        console.log(res.data.Rooms);
-        setRooms(res.data.Rooms);
+        console.log(res.data.rooms);
+        setRooms(res.data.rooms);
       });
   }, []);
   
@@ -24,17 +24,17 @@ function App() {
       <thead>
         <tr>
           <th style={{ border: "3px solid black" }}>Rooms</th>
-          <th style={{ border: "3px solid black" }}>Createc By</th>
+          <th style={{ border: "3px solid black" }}>Created By</th>
         </tr>
       </thead>
       <tbody>
         {rooms.map((room) => (
-          <tr key={room.Room_ID}>
+          <tr key={room.rooms}>
             <td style={{ border: "2px solid blue" }}>
-              Room ID: {room.Room_ID}
+              Room ID: {room.rooms}
             </td>
             <td style={{ border: "2px solid blue" }}>
-              Created By user with ID: {room.Create_By}
+              Created By user with ID: {room.created_by}
             </td>
           </tr>
         ))}
