@@ -8,11 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-<<<<<<< HEAD
-# Make data base, printed on Fri Jun 10 06:56:56 2022
-=======
-# Make data base, printed on Thu Jun  9 13:56:50 2022
->>>>>>> 1b9b83e3416c9162d1a39f2c39469cb77a9ec00b
+# Make data base, printed on Fri Jun 10 10:17:30 2022
 
 # Variables
 
@@ -27,6 +23,8 @@ GP_OPEN_EDITOR = /ide/bin/remote-cli/gitpod-code
 # default
 .SHELLFLAGS := -c
 # environment
+VSCODE_AGENT_FOLDER = /home/gitpod/.vscode-server
+# environment
 VSCODE_LOG_NATIVE = false
 # environment
 VSX_REGISTRY_URL = https://open-vsx.gitpod.io
@@ -37,11 +35,7 @@ rvm_path = /home/gitpod/.rvm
 # environment
 SUPERVISOR_ADDR = localhost:22999
 # environment
-<<<<<<< HEAD
 SUPERVISOR_ENVVAR_OTS = https://gitpod.io/api/ots/get/77ae27a5-cef2-430e-91f6-9bf55fe47838
-=======
-SUPERVISOR_ENVVAR_OTS = https://gitpod.io/api/ots/get/22a5166d-fdd8-4a9d-b1e0-cffdcbf7576f
->>>>>>> 1b9b83e3416c9162d1a39f2c39469cb77a9ec00b
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
@@ -51,9 +45,9 @@ CURDIR := /workspace/gitpod-workspace
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-US","availableLanguages":{}}
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
-_ = /ide/node
+_ = /home/gitpod/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/node
 # environment
 GITPOD_THEIA_PORT = 23000
 # automatic
@@ -81,15 +75,15 @@ LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 GIT_EDITOR = /ide/bin/remote-cli/gitpod-code --wait
 # environment
-VSCODE_CWD = /ide
-# default
-MAKE_HOST := x86_64-pc-linux-gnu
+VSCODE_CWD = /home/gitpod
 # environment
-PATH = /ide/bin/remote-cli:/home/gitpod/.nix-profile/bin:/workspace/.cargo/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/home/gitpod/.pyenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/workspace/.cargo/bin:/home/gitpod/.rvm/gems/ruby-2.7.6/bin:/home/gitpod/.rvm/gems/ruby-2.7.6@global/bin:/home/gitpod/.rvm/rubies/ruby-2.7.6/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin:/workspace/.pip-modules/bin:/home/gitpod/.pyenv/bin:/workspace/.rvm/bin:/home/gitpod/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin:/home/gitpod/.rvm/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin
+SSH_CONNECTION = UNKNOWN 65535 UNKNOWN 65535
 # environment
-GITPOD_OWNER_ID = 0f16d9df-abef-4cae-a09a-a1c8841ff89f
+PATH = /home/gitpod/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/bin/remote-cli:/home/gitpod/.nix-profile/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/workspace/.cargo/bin:/home/gitpod/.rvm/gems/ruby-2.7.6/bin:/home/gitpod/.rvm/gems/ruby-2.7.6@global/bin:/home/gitpod/.rvm/rubies/ruby-2.7.6/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/home/gitpod/.pyenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin:/workspace/.pip-modules/bin:/home/gitpod/.pyenv/bin:/workspace/.rvm/bin:/home/gitpod/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin:/home/gitpod/.rvm/bin
 # environment
-GITPOD_WORKSPACE_ID = egikarakash-gitpodworks-dsvrxyuvx8y
+GITPOD_OWNER_ID = c44ff99c-d93b-4ddd-b6c4-8498969bb049
+# environment
+GITPOD_WORKSPACE_ID = egikarakash-gitpodworks-9efplgr5so9
 # environment
 GITPOD_INTERVAL = 30000
 # environment
@@ -113,11 +107,7 @@ SDKMAN_PLATFORM = linuxx64
 # environment
 VSCODE_LOG_STACK = false
 # environment
-<<<<<<< HEAD
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-0640565f-8563-4f4a-b382-f4d289990c97.sock
-=======
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-b351ff0d-5cc3-4927-b10c-a43a2ce8da80.sock
->>>>>>> 1b9b83e3416c9162d1a39f2c39469cb77a9ec00b
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-81752957-1db8-48dc-a510-addb9aad9230.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -142,8 +132,10 @@ WORKSPACEKIT_WRAP_NETNS = true
 .LOADED := 
 # environment
 GEM_HOME = /home/gitpod/.rvm/gems/ruby-2.7.6
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
 # environment
-MANPATH = /home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man::/home/linuxbrew/.linuxbrew/share/man
+MANPATH = /home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man::/home/linuxbrew/.linuxbrew/share/man
 # environment
 NODE_VERSION = 16.15.1
 # environment
@@ -157,15 +149,13 @@ THEIA_WEBVIEW_EXTERNAL_ENDPOINT = webview-{{hostname}}
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
+LOGNAME = gitpod
+# environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # makefile (from 'Makefile', line 8)
 steps = 1
 # environment
-<<<<<<< HEAD
 GITPOD_CLI_APITOKEN = U9-42FEeTN.SJpJr3Kav55NQ.p3PwRUu
-=======
-GITPOD_CLI_APITOKEN = L3aBAmi1i.N2S89SugWAlb9CGdjYnmnn
->>>>>>> 1b9b83e3416c9162d1a39f2c39469cb77a9ec00b
 # automatic
 +F = $(notdir $+)
 # environment
@@ -173,7 +163,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
-HOSTNAME = egikarakash-gitpodworks-dsvrxyuvx8y
+HOSTNAME = egikarakash-gitpodworks-9efplgr5so9
 # environment
 GRADLE_USER_HOME = /workspace/.gradle/
 # environment
@@ -193,7 +183,7 @@ SHLVL = 0
 # environment
 NIX_PROFILES = /nix/var/nix/profiles/default /home/gitpod/.nix-profile
 # environment
-GITPOD_GIT_USER_NAME = AdmirDemaj
+GITPOD_GIT_USER_NAME = EgiKarakashi
 # environment
 JAVA_HOME = /home/gitpod/.sdkman/candidates/java/current
 # default
@@ -205,7 +195,7 @@ USER = gitpod
 # environment
 GOROOT = /home/gitpod/go
 # environment
-GITPOD_IDE_ALIAS = code-desktop
+GITPOD_IDE_ALIAS = code
 # environment
 rvm_version = 1.29.12 (latest)
 # automatic
@@ -219,11 +209,11 @@ THEIA_RATELIMIT_LOG = 50
 # environment
 THEIA_MINI_BROWSER_HOST_PATTERN = browser-{{hostname}}
 # environment
-GITPOD_GIT_USER_EMAIL = adidemaj@yahoo.com
+GITPOD_GIT_USER_EMAIL = egikarakashi@outlook.com
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /
+OLDPWD = /home/gitpod/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
 # default
 .VARIABLES := 
 # automatic
@@ -238,17 +228,16 @@ seed = seed
 MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
-# automatic
-*D = $(patsubst %/,%,$(dir $*))
 # environment
- 
-NVM_DIR = /home/gitpod/.nvm
+SSH_CLIENT = UNKNOWN 65535 65535
+# environment
+MAIL = /var/mail/gitpod
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
 rvm_user_install_flag = 1
 # environment
-BROWSER = /ide/bin/helpers/browser.sh
+BROWSER = /home/gitpod/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/bin/helpers/browser.sh
 # environment
 GITPOD_MEMORY = 3435
 # environment
@@ -257,8 +246,6 @@ VSCODE_HANDLES_SIGPIPE = true
 GITPOD_TASKS = [{"init":"make"}]
 # default
 MAKEFILES := 
-# environment
-GITPOD_CODE_HOST = https://gitpod.io
 # environment
 HOMEBREW_NO_AUTO_UPDATE = 1
 # automatic
@@ -278,11 +265,13 @@ PWD = /workspace/gitpod-workspace
 # environment
 LC_ALL = C
 # environment
-GITPOD_WORKSPACE_CONTEXT = {"isFile":false,"path":"","title":"EgiKarakashi/gitpod-workspace - main","ref":"main","refType":"branch","revision":"41310ede0b4e8d15cc6a9fdcfba2f1660892dde2","repository":{"cloneUrl":"https://github.com/EgiKarakashi/gitpod-workspace.git","host":"github.com","name":"gitpod-workspace","owner":"EgiKarakashi","private":false,"fork":{"parent":{"cloneUrl":"https://github.com/marcopeg/gitpod-workspace.git","host":"github.com","name":"gitpod-workspace","owner":"marcopeg","private":false}}},"normalizedContextURL":"https://github.com/EgiKarakashi/gitpod-workspace","checkoutLocation":"gitpod-workspace","upstreamRemoteURI":"https://github.com/marcopeg/gitpod-workspace.git"}
+GITPOD_WORKSPACE_CONTEXT = {"isFile":false,"path":"","title":"EgiKarakashi/gitpod-workspace - main","ref":"main","refType":"branch","revision":"2b1110dc0b923cb92707f48d6015fac80c881b54","repository":{"cloneUrl":"https://github.com/EgiKarakashi/gitpod-workspace.git","host":"github.com","name":"gitpod-workspace","owner":"EgiKarakashi","private":false,"fork":{"parent":{"cloneUrl":"https://github.com/marcopeg/gitpod-workspace.git","host":"github.com","name":"gitpod-workspace","owner":"marcopeg","private":false}}},"normalizedContextURL":"https://github.com/EgiKarakashi/gitpod-workspace","checkoutLocation":"gitpod-workspace","upstreamRemoteURI":"https://github.com/marcopeg/gitpod-workspace.git","additionalFiles":{".gitpod.yml":"# This configuration file was automatically generated by Gitpod.\n# Please adjust to your needs (see https://www.gitpod.io/docs/config-gitpod-file)\n# and commit this file to your remote git repository to share the goodness with others.\n\ntasks:\n  - init: make\n\n\n"}}
 # environment
 JAVA_TOOL_OPTIONS =  -Xmx3435m
 # automatic
 ^F = $(notdir $^)
+# environment
+NVM_DIR = /home/gitpod/.nvm
 # environment
 rvm_prefix = /home/gitpod
 # default
@@ -298,15 +287,13 @@ NGINX_DOCROOT_IN_REPO = public
 # environment
 rvm_loaded_flag = 1
 # environment
-<<<<<<< HEAD
 GITPOD_INSTANCE_ID = 3d1fcda8-d183-4cfe-8705-ded00b747bc2
-=======
-GITPOD_INSTANCE_ID = ee1be321-2a4b-487a-8d8e-6bd0394e0acc
->>>>>>> 1b9b83e3416c9162d1a39f2c39469cb77a9ec00b
 # environment
-GITPOD_WORKSPACE_URL = https://egikarakash-gitpodworks-dsvrxyuvx8y.ws-eu47.gitpod.io
+GITPOD_WORKSPACE_URL = https://egikarakash-gitpodworks-9efplgr5so9.ws-eu47.gitpod.io
 # default
 .RECIPEPREFIX := 
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
 # environment
 LANG = C
 # environment
@@ -316,7 +303,7 @@ VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
 MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 # variable set hash-table stats:
-# Load=141/1024=14%, Rehash=0, Collisions=19/168=11%
+# Load=145/1024=14%, Rehash=0, Collisions=22/172=13%
 
 # Pattern-specific Variable Values
 
@@ -324,13 +311,9 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 
 # Directories
 
-<<<<<<< HEAD
-# . (device 2346, inode 939527732): 12 files, no impossibilities.
-=======
-# . (device 2346, inode 1076184402): 12 files, no impossibilities.
->>>>>>> 1b9b83e3416c9162d1a39f2c39469cb77a9ec00b
+# . (device 2346, inode 939527732): 13 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -391,8 +374,7 @@ migrate-create:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
- 
-#  Last modified 2022-06-09 13:53:37.893955336
+#  Last modified 2022-06-10 08:16:59.79114772
 #  File has been updated.
 #  Successfully updated.
 
@@ -412,7 +394,6 @@ init-metadata:
 #  recipe to execute (from 'Makefile', line 60):
 	@hasura metadata apply --project hasura-chatrooms
 
- 
 seed:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -519,17 +500,12 @@ migrate-messages:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 36 / storage = 374 B / avg = 10 B
-# current buf: size = 8162 B / used = 374 B / count = 36 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 37 / storage = 383 B / avg = 10 B
+# current buf: size = 8162 B / used = 383 B / count = 37 / avg = 10 B
 
-# strcache performance: lookups = 65 / hit rate = 44%
+# strcache performance: lookups = 66 / hit rate = 43%
 # hash-table stats:
-<<<<<<< HEAD
-# Load=35/8192=0%, Rehash=0, Collisions=1/63=2%
-# Finished Make data base on Fri Jun 10 06:56:56 2022
-=======
-# Load=36/8192=0%, Rehash=0, Collisions=1/65=2%
-# Finished Make data base on Thu Jun  9 13:56:50 2022
->>>>>>> 1b9b83e3416c9162d1a39f2c39469cb77a9ec00b
+# Load=37/8192=0%, Rehash=0, Collisions=1/66=2%
+# Finished Make data base on Fri Jun 10 10:17:30 2022
 
  

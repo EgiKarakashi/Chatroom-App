@@ -30,10 +30,10 @@ function App() {
       <tbody>
         {rooms.map((room) => (
           <tr key={room.Room_ID}>
-            <td style={{ border: "2px solid black" }}>
+            <td style={{ border: "2px solid blue" }}>
               Room ID: {room.Room_ID}
             </td>
-            <td style={{ border: "2px solid black" }}>
+            <td style={{ border: "2px solid blue" }}>
               Created By user with ID: {room.Create_By}
             </td>
           </tr>
