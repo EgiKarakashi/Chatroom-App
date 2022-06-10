@@ -6,3 +6,5 @@ DROP SEQUENCE IF EXISTS "public"."chatroom_id_seq" CASCADE;
 
 DROP TABLE IF EXISTS "messages" CASCADE;
 DROP SEQUENCE IF EXISTS "public"."message_id_seq" CASCADE;
+
+DROP TABLE IF EXISTS "full-schema" CASCADE;

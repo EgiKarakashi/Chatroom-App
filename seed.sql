@@ -13,7 +13,7 @@ SELECT
   end) || '.com') AS "email",
   now() - '30d'::INTERVAL * random() AS "created_at"
 
-FROM generate_series(1, 100) AS "person"
+FROM generate_series(1, 1000) AS "person"
 
 ON CONFLICT ON CONSTRAINT "users_pkey"
 DO UPDATE SET
@@ -34,7 +34,7 @@ CONCAT('chatroom', "chatroom") AS "name",
 ("chatroom") AS "created_by",
 now() - '30d'::INTERVAL * random() AS "created_at"
 
-FROM generate_series(1, 100) AS "chatroom"
+FROM generate_series(1, 1000) AS "chatroom"
 
 ON CONFLICT ON CONSTRAINT "chatrooms_pkey"
 DO UPDATE SET
@@ -56,7 +56,7 @@ CONCAT('chatroom', "chatroom") AS "name",
 ("chatroom") AS "created_by",
 now() - '30d'::INTERVAL * random() AS "created_at"
 
-FROM generate_series(1, 100) AS "chatroom"
+FROM generate_series(1, 1000) AS "chatroom"
 
 ON CONFLICT ON CONSTRAINT "chatrooms_pkey"
 DO UPDATE SET
